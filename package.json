@@ -1,0 +1,20 @@
+{
+    "name": "frevo",
+    "version": "0.0.1",
+    "description": "A simple starter static code generator to Front-End development",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo Test"
+    },
+    "homepage": "https://github.com/jmontejr/frevo",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jmontejr/frevo.git"
+    },
+    "bugs": {
+      "url": "https://github.com/jmontejr/frevo/issues"
+    },
+    "author": "José Monte (https://jmontejr.github.io)",
+    "license": "MIT"
+  }
+  
