@@ -1,5 +1,5 @@
 {
-    "name": "frevo",
+    "name": "frevo-frontend-starter",
     "version": "0.0.1",
     "description": "A simple starter static code generator to Front-End development",
     "main": "index.js",
