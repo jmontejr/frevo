@@ -2,9 +2,17 @@
   "name": "frevo",
   "version": "1.0.0",
   "description": "A simple starter static code generator to Front-End development",
-  "main": "index.js",
+  "private": true,
+  "bin": {
+    "frevo": "bin/frevo"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write **/*.{js,json} && standard --fix",
+    "lint": "standard",
+    "test": "jest",
+    "watch": "jest --watch",
+    "snapupdate": "jest --updateSnapshot",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -16,9 +24,31 @@
     "url": "https://github.com/jmontejr/frevo/issues"
   },
   "homepage": "https://github.com/jmontejr/frevo#readme",
+  "files": [
+    "src",
+    "LICENSE",
+    "readme.md",
+    "docs",
+    "bin"
+  ],
+  "dependencies": {
+    "gluegun": "latest"
+  },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-sass": "^4.1.0"
+    "standard": "^12.0.1",
+    "prettier": "^1.12.1",
+    "jest": "^24.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }

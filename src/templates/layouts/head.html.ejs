@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "@@tag");
+    </script>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="@@root/assets/images/misc/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="@@root/assets/images/misc/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="author" content="Autor Name">
+    <meta name="description" content="<%= props.name %> project">
+    <meta name="keywords" content="development, web, javascript, html, css, sass, scss, gulp">
+    <meta name="referrer" content="origin">
+    <title><%= props.name %></title>
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" crossorigin></script>
+    <![endif]-->
+
+    <link rel="preload" type="text/css" href="@@root/assets/css/style.min.css" as="style">
+    <link rel="stylesheet" href="@@root/assets/css/style.min.css">
+</head>

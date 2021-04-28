@@ -1,0 +1,11 @@
+@@include('src/app/modules/layouts/Head/index.html', { 'root': '<%= props.root %>', 'tag': 'GTM-XXXX' })
+<body>
+    @@include('src/app/modules/layouts/Header/index.html', { 'tag': 'GTM-XXXX' })
+
+    <div id="<%= props.name.toLowerCase() %>" class="<%= props.name.toLowerCase() %>">
+
+    </div>
+
+    @@include('src/app/modules/layouts/Footer/index.html', { 'root': '<%= props.root %>' })
+</body>
+</html>
