@@ -2,7 +2,6 @@
   "name": "frevo",
   "version": "1.0.0",
   "description": "A simple starter static code generator to Front-End development",
-  "private": true,
   "bin": {
     "frevo": "bin/frevo"
   },
