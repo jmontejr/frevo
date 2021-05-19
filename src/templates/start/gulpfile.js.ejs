@@ -62,6 +62,7 @@ function sass() {
 
 function html() {
   return src(PATHS.html.origin)
+    .pipe($.replace('##', 'src/app/modules'))
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@root'

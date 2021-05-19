@@ -22,6 +22,7 @@
    * [Obtendo o projeto](#obtendo-o-projeto)
    * [Instalando as dependências](#instalando-as-dependências)
    * [Scripts de execução](#scripts-de-execução)
+   * [Caminho raíz](#caminho-raíz)
    * [Autor](#autor)
 
 <!--te-->
@@ -186,6 +187,22 @@ $ npm run start
 
 $ npm run build
 ```
+
+Ir para o [topo](#top).
+
+## Caminho raíz
+
+Você pode usar `##` como um *alias* para `src/app/modules` nos arquivos `*.html`.
+```html
+<!-- A forma de importar arquivos usando o file-include a seguir -->
+@@include('##/layouts/Footer/index.html')
+
+<!-- é igual à forma abaixo-->
+@@include('src/app/modules/layouts/Footer/index.html')
+```
+
+Você poderá usar qualquer uma das duas!
+
 
 Ir para o [topo](#top).
 
