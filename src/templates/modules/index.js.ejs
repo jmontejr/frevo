@@ -1,9 +1,11 @@
 const <%= props.name %> = {
-    init() {
+  init() {
 
-    }
+  }
 };
 
 <%= props.name %>.init();
 
-module.exports = <%= props.name %>;
+try {
+  module.exports = <%= props.name %>;
+} catch (error) {}

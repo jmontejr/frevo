@@ -1,5 +1,9 @@
-const <%= props.name.toLowerCase() %> = require('./index');
+const <%= props.type === 'service' ? `${props.name.toLowerCase()}Service`: props.name.toLowerCase() %> = require('./index');
 
-describe('<%= props.name %> Testing', () => {
+describe('<%= props.type === 'service' ? `${props.name}Service`: props.name %> Testing', () => {
+
+  test('<%= props.type === 'service' ? `${props.name}Service`: props.name %> test example', () => {
+    expect(<%= props.type === 'service' ? `${props.name.toLowerCase()}Service`: props.name.toLowerCase() %>).toHaveProperty('init');
+  });
 
 });

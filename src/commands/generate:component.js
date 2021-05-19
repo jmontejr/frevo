@@ -31,7 +31,7 @@ module.exports = {
       await generate({
         template: 'modules/index.test.js.ejs',
         target: `src/app/modules/components/${ name }/index.test.js`,
-        props: { name }
+        props: { name, type: 'component' }
       })
 
       await generate({
