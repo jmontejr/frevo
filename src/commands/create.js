@@ -65,7 +65,7 @@ module.exports = {
       await generate({
         template: 'start/readme.md.ejs',
         target: `${ name.toLowerCase() }/README.md`,
-        props: { name }
+        props: { name, nodeVersion: process.versions.node }
       })
 
       await generate({
