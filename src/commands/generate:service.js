@@ -19,13 +19,13 @@ module.exports = {
       await generate({
         template: 'modules/index.js.ejs',
         target: `src/app/modules/services/${ name }/index.js`,
-        props: { name }
+        props: { name: `${name}Service` }
       })
 
       await generate({
         template: 'modules/index.test.js.ejs',
         target: `src/app/modules/services/${ name }/index.test.js`,
-        props: { name }
+        props: { name, type: 'service' }
       })
 
       success(`Generated ${ name } service.`)

@@ -43,6 +43,11 @@ module.exports = {
       })
 
       await generate({
+        template: 'start/jest.config.js.ejs',
+        target: `${ name.toLowerCase() }/jest.config.js`
+      })
+
+      await generate({
         template: 'start/babel.config.json.ejs',
         target: `${ name.toLowerCase() }/babel.config.json`
       })
