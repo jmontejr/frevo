@@ -1,6 +1,6 @@
 {
   "name": "frevo",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A simple starter static code generator to Front-End development",
   "bin": {
     "frevo": "bin/frevo"
